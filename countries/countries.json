@@ -1,0 +1,32 @@
+{
+    "countries": [
+      {
+        "country": "Czech Republic",
+        "provided_tanks": "T-72М - 72"
+      },
+      {
+        "country": "Poland",
+        "provided_tanks": "T-72M1/Т-72M1R - 232, Leopard 2 - 0/14"
+      },
+      {
+        "country": "Bulgaria",
+        "provided_tanks": "T-72M1 - ?"
+      },
+      {
+        "country": "North Macedonia",
+        "provided_tanks": "T-72А - 8+"
+      },
+      {
+        "country": "Slovenia",
+        "provided_tanks": "M-55S - 28"
+      },
+      {
+        "country": "Netherlands + US",
+        "provided_tanks": "T-72Б - 90"
+      },
+      {
+        "country": "United Kingdom",
+        "provided_tanks": "Challenger 2 - 0/14"
+      }
+    ]
+}

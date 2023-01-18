@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+    main:
+        build:
+           context: main
+        ports: 
+            - "8080"
+
+    companies:
+        build:
+           context: companies
+        ports: 
+            - "8081"
+    
+    countries:
+        build:
+           context: countries
+        ports: 
+            - "8082"
+
+    nginx:
+        container_name: nginx
+        build:
+            context: nginx
+        ports:
+            - "80:80"
+        depends_on:
+            - main
+            - companies
+            - countries
