@@ -11,7 +11,7 @@ import service.data.Companies
 import service.data.Company
 import java.io.File
 
-private const val COMPANIES_FILE = "ktor-companies/src/main/resources/companies.json"
+private const val COMPANIES_FILE = "src/main/resources/companies.json"
 
 fun Application.configureRouting() {
     routing {
