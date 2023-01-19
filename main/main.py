@@ -23,8 +23,9 @@ def weather():
 
     company_host = "\ncompany_host: " + company_response['company_host']
     country_host = "\ncountry_host: " + country_response['country_host']
+    main_host = "\ncountry_host: " + socket.gethostname()
 
-    return company_info + country_info + company_host + country_host
+    return company_info + country_info + company_host + country_host + main_host
 
 
 if __name__ == '__main__':
