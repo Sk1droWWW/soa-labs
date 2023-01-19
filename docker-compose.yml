@@ -10,7 +10,7 @@ services:
 
     companies:
         build:
-           context: companies
+           context: ktor-companies
         expose: 
             - 8080
         scale: 3
