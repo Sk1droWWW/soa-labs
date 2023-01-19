@@ -13,7 +13,7 @@ fun Application.configureRouting() {
             val company = companies.companiesList
                 .random()
                 .copy(
-                    host = this.context.request.local.serverHost
+                    host = this.context.request.local.localHost
                 )
 
             call.respond(company)
