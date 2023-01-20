@@ -18,15 +18,17 @@ def weather():
 
     company_info = company_response['company'] + \
         ": " + company_response['provided_aid'] + "\n"
-    country_info = country_response['country'] + \
-        ": " + country_response['provided_tanks'] + "\n"
-
+    if country_response.get('country') is not None:
+        country_info = country_response.get('country') + \
+            ": " + country_response.get('provided_tanks') + "\n"
+    else:
+        country_info = country_response.get('country message')
+    
     company_host = "\ncompany_host: " + company_response['company_host']
     country_host = "\ncountry_host: " + country_response['country_host']
-    main_host = "\ncountry_host: " + socket.gethostname()
+    main_host = "\nmain_host: " + socket.gethostname()
 
     return company_info + country_info + company_host + country_host + main_host
-
 
 if __name__ == '__main__':
     app.run(debug=True)
